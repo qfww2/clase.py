@@ -68,5 +68,30 @@ async def mem2(ctx):
         picture = discord.File(f)
     await ctx.send(file=picture)
 
+help = [
+    "$hello",
+
+    "$he",
+
+    "$add",
+
+    "$slap @meber beacuse yes",
+
+    "$problemas",
+
+    "$reciclaje",
+
+    "$mem1",
+
+    "$mem2",
+
+    "$contaminacion",
+]
+
+@bot.command()
+async def ayuda(ctx):
+    ayuda = random.choice(help)
+    await ctx.send(help)
+
 
 bot.run("tu token xd")
